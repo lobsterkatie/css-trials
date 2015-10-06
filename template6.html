@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+            #red{
+                background-color: red;
+
+            }
+
+            #blue{
+                background-color: blue;
+            }
+
+            .outer{
+                height: 200px;
+                width: 350px;
+                display: inline-block;
+            }
+            .inner {
+                background-color: black;
+                height: 100px;
+                width: 100px;
+                margin: 50px 0px 0px 50px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="red" class="outer">
+            <!--Need to put on same line to avoid whitespace, was off by 5px -->
+            <div class="inner"></div><div class="inner"></div> 
+        </div><div id="blue" class="outer">
+            <!--Need to put on same line to avoid whitespace, was off by 5px -->
+            <div class="inner"></div><div class="inner"></div>
+        </div>
+    </body>
+</html>
