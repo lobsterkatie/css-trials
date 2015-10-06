@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-family: sans-serif;
+            }
+            .outer{
+                height: 130px;
+                width: 600px;
+                background-color: #555555;
+                margin: 0px 0px 10px 10px;
+            }
+            .inner {
+                background-color: #CCCCCC;
+                margin: 6px 0px 0px 6px;
+                display: inline-block;
+            }
+            .toprow {
+                width: 192px;
+                height: 118px;
+            }
+            .middlerow-tall{
+                height: 100px;
+                width: 142px;
+                vertical-align: top;
+            }
+            .middlerow-short{
+                height: 75px;
+                width: 142px;
+                vertical-align: top;
+            }
+            .bottomrow-tall {
+                height: 118px;
+                width: 291px;
+                vertical-align: bottom;
+            }
+            .bottomrow-short {
+                height: 35px;
+                width: 291px;
+                vertical-align: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AAAAAHHHHHH</h1>
+        <div class="outer">
+            <!--Need to put on same line to avoid whitespace, was off by 5px -->
+            <div class="inner toprow"></div><div class="inner toprow"></div><div class="inner toprow"></div> 
+        </div>
+        <div class="outer">
+            <!--Need to put on same line to avoid whitespace, was off by 5px -->
+            <div class="inner middlerow-tall"></div><div class="inner middlerow-short"></div><div class="inner middlerow-tall"></div><div class="inner middlerow-short"></div>
+        </div>
+        <div class="outer">
+            <div class="inner bottomrow-short"></div><div class="inner bottomrow-tall"></div>
+        </div>
+    </body>
+</html>
